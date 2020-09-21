@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Aboard</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="main-div">
+        <div>
+            <div class="form-group">
+                <div class="navigation-group">
+                    <div id="selected-option"></div>
+                    <button class="navigation-button" onclick="showLoginForm()">Log in</button>
+                    <button class="navigation-button" onclick="showRegisterForm()">Register</button>
+                </div>
+                <div id="login-form" class="input-group">
+                    <input type="text" placeholder="Enter your e-mail or user ID" class="input-field">
+                    <input type="password" placeholder="Enter your password" class="input-field">
+                    <div class="check">
+                        <input type="checkbox"><span>Remember me</span>
+                    </div>
+                    <button class="login-button onhover">Log in</button>
+                </div>
+                <div id="register-form" class="input-group">
+                    <input type="text" placeholder="Enter your user ID" class="input-field">
+                    <input type="email" placeholder="Enter your e-mail" class="input-field">
+                    <input type="password" placeholder="Enter your password" class="input-field">
+                    <button class="login-button onhover">Register</button>
+                </div>
+                <div class="social-media-group">
+                    <img src="../assets/images/social media/facebook-logo.png" alt="Facebook"
+                        class="social-media-icon social-media-icon-smaller onhover">
+                    <img src="../assets/images/social media/google-plus-logo.png" alt="Google Plus"
+                        class="social-media-icon onhover">
+                    <img src="../assets/images/social media/linkedin-logo.png" alt="Linkedin"
+                        class="social-media-icon social-media-icon-larger onhover">
+                </div>
+            </div>
+            <div class="image-thanks">
+                <span>Background image by
+                    <a href="https://rb.gy/ed8hz1" target="_blank">Andrea Cau</a>
+                    on
+                    <a href="https://rb.gy/jrogxf" target="_blank">Unsplash</a>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var loginPosition = document.getElementById("login-form");
+        var registerPosition = document.getElementById("register-form");
+        var selectedButtonPosition = document.getElementById("selected-option");
+
+        function showLoginForm() {
+            loginPosition.style.left = "0%";
+            registerPosition.style.left = "100%";
+            selectedButtonPosition.style.left = "0%";
+        }
+
+        function showRegisterForm() {
+            loginPosition.style.left = "-100%";
+            registerPosition.style.left = "0%";
+            selectedButtonPosition.style.left = "50%";
+        }
+    </script>
+</body>
+
+</html>
