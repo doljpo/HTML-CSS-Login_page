@@ -20,8 +20,9 @@
                 <div id="login-form" class="input-group">
                     <input type="text" placeholder="Enter your e-mail or user ID" class="input-field">
                     <input type="password" placeholder="Enter your password" class="input-field">
-                    <div class="check">
-                        <input type="checkbox"><span>Remember me</span>
+                    <div class="check-group">
+                        <input type="checkbox" id="remember-check" class="custom-checkbox"><span
+                            onclick="toggleRememberMe()">Remember me</span>
                     </div>
                     <button class="login-button onhover">Log in</button>
                 </div>

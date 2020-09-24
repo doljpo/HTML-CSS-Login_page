@@ -73,7 +73,7 @@ img {
 }
 
 .onhover:hover {
-    box-shadow: 0px 0px 5px 0px #fff;    
+    box-shadow: 0px 0px 5px 0px #fff;
 }
 
 .social-media-group {
@@ -119,7 +119,7 @@ img {
     font-size: 16px;
 }
 
-.check {
+.check-group {
     width: 80%;
     margin: 30px auto;
     margin-top: 0px;
@@ -127,16 +127,44 @@ img {
     text-align: left;    
 }
 
-.check input[type="checkbox"] {
-    margin-right: 1rem;
+.check-group input[type="checkbox"] {
+    margin-right: 0.5rem;    
 }
 
-.check span {
+.check-group span {
     color: #777;
     font-size: 12px;
-    bottom: 2px;
+    bottom: 4px;
     position: relative;
-    line-height: 8px;
+    cursor: default;
+}
+
+.check-group:hover span {
+    font-weight: bold;
+}
+
+.custom-checkbox {
+    appearance: none;
+	background-color: #bbd0ff;
+    outline: none;	
+	padding: 7px;
+	border-radius: 3px;
+	display: inline-block;
+	position: relative;    
+}
+
+.custom-checkbox:checked {
+	background-color: #175480;
+}
+
+.custom-checkbox:checked:after {
+    content: '\2714';
+    font-size: 12px;
+    position: absolute;
+    top: 0px;
+    left: 2px;
+    color: #bbd0ff;
+    font-weight: bold;
 }
 
 #selected-option {

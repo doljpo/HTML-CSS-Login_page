@@ -13,3 +13,7 @@ function showRegisterForm() {
     registerPosition.style.left = "0%";
     selectedButtonPosition.style.left = "50%";
 }
+
+function toggleRememberMe() {
+    document.getElementById("remember-check").checked = !document.getElementById("remember-check").checked;
+}
