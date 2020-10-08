@@ -10,7 +10,4 @@ Social media logos from: https://www.freepnglogos.com
 
 Login sample:
 
-![login page screenshot]
-(https://github.com/doljpo/HTML-CSS-Login_page/blob/master/assets/images/print/login_print.jpg)
-
-![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+![login page screenshot](https://github.com/doljpo/HTML-CSS-Login_page/blob/master/assets/images/print/login_print.jpg)
